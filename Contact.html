@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Contact Us</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+   <style>
+   
+input[type=text], select, textarea {
+  width: 80%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+  background-color: #10221b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-style: italic;
+  font-size: medium;
+}
+
+
+input[type=submit]:hover {
+  background-color: #4911e4;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #663e3e;
+  padding: 30px;
+}
+main{
+  color: white;
+  border: 10px solid dashed;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+
+   </style>
+
+ </head>
+  <body>
+   <!--
+    <form>
+      <h2>Contact</h2>
+       <label for="name">Name</label>
+       <input id="name"><br>
+       <label for="text">Massege</label>
+       <input type="text"><br>
+      
+       <button class="submit">Register</button> -->
+       <main>
+       <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </br>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </br>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="usa">Somalia</option>
+            <option value="australia">Saudi Arabia</option>
+            <option value="canada">Pakistan</option>
+            <option value="usa">Malaysia</option>
+          </select>
+        </br>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </br>
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+    </main>
+
+
+
+  </body>
+
+</html>
